@@ -5156,6 +5156,31 @@ h1.article-title {
   left: -2px;
   right: -2px;
 }
+img.lazy {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+img.lazy:not(.loaded) {
+  opacity: 0;
+}
+img.lazy.loaded,
+img.lazy.error {
+  opacity: 1;
+}
+.group-body .site-card .card-link>img {
+  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+  -moz-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+  -o-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+}
+.group-body .user-card .card-link>img {
+  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
+  -o-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.2s ease-out;
+}
 :root {
   --swiper-theme-color: #0078d4 !important;
 }
